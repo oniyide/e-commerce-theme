@@ -1,0 +1,29 @@
+.featured {
+  padding-top: 3em;
+  padding-bottom: 4em;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+
+  &-block {
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+    figcaption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    img {
+      transition: all 0.5s;
+    }
+    &:hover img {
+      transform: scale(1.2);
+    }
+  }
+}

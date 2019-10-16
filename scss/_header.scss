@@ -1,0 +1,25 @@
+.header {
+  height: 100vh;
+}
+
+.show {
+  background-image: url(../img/banner_img.png);
+
+  background-size: cover;
+  padding-top: 2em;
+  width: 100%;
+  color: #000;
+  height: 85%;
+
+  .desc {
+    font-size: 1.8rem;
+  }
+  .container {
+    margin-left: 10%;
+    width: 40%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: start;
+  }
+}

@@ -1,0 +1,77 @@
+.new-arrival {
+  padding-bottom: 3em;
+  &-title {
+    padding-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3em;
+
+    ul {
+      display: flex;
+      li {
+        margin-right: 1.2em;
+        color: #000;
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  &-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5em;
+    img {
+      height: 400px;
+      object-fit: cover;
+    }
+    figure {
+      position: relative;
+      overflow: hidden;
+
+      &:hover figcaption {
+        transform: translateY(0%);
+      }
+
+      figcaption {
+        transition: all 0.8s;
+        transform: translateY(100%);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 1.2em;
+        position: absolute;
+        color: #fff;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($primary, 0.4);
+        text-align: center;
+        p {
+          letter-spacing: 10px;
+          font-size: 1.2rem;
+        }
+        .raiting {
+          color: yellow;
+        }
+
+        .icons {
+          i {
+            color: #000;
+            padding: 1.5em;
+            background-color: #fff;
+            border-radius: 50%;
+            &:nth-child(1) {
+              margin-right: 0.9em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
